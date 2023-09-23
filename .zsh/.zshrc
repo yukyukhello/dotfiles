@@ -61,6 +61,7 @@ autoload -Uz _zinit
 zinit ice depth=1; zplugin light romkatv/powerlevel10k
 zinit ice wait'0'; zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
