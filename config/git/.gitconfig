@@ -1,0 +1,7 @@
+[user]
+	name = yukyukhello12
+	email = yukyukhello12@g.ecc.u-tokyo.ac.jp
+[core]
+	editor = vim
+[commit]
+	template = ~/.commit_template
