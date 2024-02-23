@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Function to prompt user for installation
+prompt_install() {
+    read -p "Do you want to install $1? (y/n): " choice
+    case "$choice" in
+        y|Y ) return 0;;
+        n|N ) return 1;;
+        * ) echo "Invalid choice. Please enter 'y' or 'n'.";;
+    esac
+}
+
+# Update package lists
+sudo apt update
+
+# Install g++
+if prompt_install "g++"; then
+    sudo apt install -y g++
+fi
+
+# Install CMake
+if prompt_install "CMake"; then
+    sudo apt install -y cmake
+fi
