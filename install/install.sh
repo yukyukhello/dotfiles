@@ -30,3 +30,7 @@ if prompt_install "python"; then
     sudo apt install -y python3
     sudo apt install -y pip
 fi
+
+if prompt_install "font"; then
+    sudo apt install -y ttf-mscorefonts-installer  # マイクロソフト社のフォント
+fi
