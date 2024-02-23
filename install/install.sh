@@ -25,3 +25,8 @@ fi
 if prompt_install "CMake"; then
     sudo apt install -y cmake
 fi
+
+if prompt_install "python"; then
+    sudo apt install -y python3
+    sudo apt install -y pip
+fi
