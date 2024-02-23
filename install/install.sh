@@ -16,6 +16,9 @@ sudo apt update
 # Install g++
 if prompt_install "g++"; then
     sudo apt install -y g++
+    sudo apt install -y build-essential
+    sudo apt install -y g++-multilib
+    sudo apt install -y gcc-multilib
 fi
 
 # Install CMake
