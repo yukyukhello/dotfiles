@@ -70,3 +70,4 @@ zinit light zsh-users/zsh-autosuggestions
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 ## 補完候補を一覧表示したとき、Tabや矢印で選択できるようにする
 zstyle ':completion:*:default' menu select=1 
+source "$HOME/.rye/env"
