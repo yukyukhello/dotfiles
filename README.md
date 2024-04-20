@@ -8,18 +8,29 @@
 ```
 git clone [url for ssh clone]
 ```
-### 3. `install.sh`コマンドの実行
-* `~/dotconfig/install`に移動して、以下コマンド
-```
-./install.sh
-```
+### 3. `install.sh`ファイルの実行
+* `~/dotconfig/setting`に移動して、以下コマンド
+  ```
+  ./install.sh
+  ```
   * 実行権限がないといわれた際は以下コマンドを実行したのちに再度実行
     ```
     chmod +x install.sh
     ```
-### 4. 各種設定ファイルのシンボリックリンクの作成
-```
-ln -s ~/dotfiles/config/git/.gitconfig ~/.gitconfig  # git設定ファイル
-ln -s ~/dotfiles/config/zsh/.zshrc ~/.zshrc  # zsh設定ファイル
-ln -s ~/dotfiles/config/zsh/.p10k.zsh ~/.p10k.zsh  # zshのターミナルテーマ設定ファイル
-```
+  * アプリケーションのインストール
+    * g++
+    * Cmake
+    * python
+    * マイクロソフト社のフォント
+### 4. `setting.sh`ファイルの実行
+* `~/dotconfig/setting`に移動して、以下コマンド
+  ```
+  ./setting.sh
+  ```
+### 5. フォントの設定
+* zshのターミナルテーマPowerlevel10k用のフォントをインストール
+  * [MesloLGS NF Regular](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)
+  * [MesloLGS NF Bold](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)
+  * [MesloLGS NF Italic](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
+  * [MesloLGS NF Bold Italic](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+* 使用したいターミナルのフォントを`MesloLGS NF`に設定する
