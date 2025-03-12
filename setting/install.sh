@@ -35,4 +35,5 @@ fi
 # install font
 if prompt_install "font"; then
     sudo apt install -y ttf-mscorefonts-installer  # マイクロソフト社のフォント
+    sudo apt install -y fonts-noto-cjk  # 日本語フォント
 fi
