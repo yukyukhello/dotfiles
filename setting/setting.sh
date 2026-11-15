@@ -22,11 +22,7 @@ if ask_execute "create symbolic links of the setting files"; then
     cp ~/dotfiles/config/git/.commit_template ~/.commit_template  # コミットテンプレートのコピー
     ln -sf ~/dotfiles/config/zsh/.zshrc ~/.zshrc  # zsh設定ファイル
     ln -sf ~/dotfiles/config/zsh/.p10k.zsh ~/.p10k.zsh  # zshのターミナルテーマ設定ファイル
-    ln -sf ~/dotfiles/config/nvim ~/.config  # nvimの設定ファイル群
-fi
-
-# nvimのパッケージマネジャpacker.nvimのインストール
-if ask_execute "install packer.nvim"; then
-    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    # ~/.config には gh のトークンなど他のツールの設定も入るので、ディレクトリごとではなくファイル単位でリンクする
+    mkdir -p ~/.config/git
+    ln -sf ~/dotfiles/config/git/ignore ~/.config/git/ignore  # 全リポジトリ共通のgitignore
 fi
